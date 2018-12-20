@@ -1,0 +1,46 @@
+    html {
+        font-size: 30px;
+    }
+    
+    @function p($px) {
+        $rem: 60px;
+        @return($px/$rem)+rem;
+    }
+    .erro{
+        width: 100vw;
+        height: 10vh;
+        box-sizing: border-box;
+        padding: p(100px);
+        span{
+            display: block;
+            width: p(150px);
+            height: p(150px);
+            background: url("../img/erro.png");
+            background-size: cover;
+        }
+    }
+    .about{
+        width: 100vw;
+        height: 16vh;
+        line-height: 10vh;
+        padding:  p(100px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-size:  p(100px);
+            font-weight: 500;
+        }
+        img{
+            width: p(450px);
+            height: p(425px);
+        }
+    }
+    .list{
+        padding: p(100px);
+        li{
+            font-size: p(80px);
+            height: p(200px);
+            color: #666;
+        }
+    }

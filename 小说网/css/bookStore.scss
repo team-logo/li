@@ -1,0 +1,145 @@
+    html {
+        font-size: 30px;
+        background: #F2F2F2;
+    }
+    
+    @function px2rem($px) {
+        $rem: 60px;
+        @return($px/$rem)+rem;
+    }
+    
+    .header {
+        width: 100vw;
+        height: px2rem(100px);
+        line-height: px2rem(100px);
+        padding: 0 px2rem(40px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: px2rem(10px);
+        position: fixed;
+        top: 0;
+        background: #fff;
+        z-index: 100;
+        i {
+            width: px2rem(40px);
+            height: px2rem(40px);
+            background: url('../images/sousuo.gif');
+            background-size: cover;
+            margin-top: px2rem(25px);
+        }
+        h2 {
+            font-size: px2rem(36px);
+            font-weight: 400;
+        }
+    }
+    
+    .box {
+        overflow: auto;
+    }
+    
+    .bg {
+        width: 100vw;
+        height: 25vh;
+        background: url("../img/bg.png");
+        background-size: 100% 100%;
+        margin-top: px2rem(100px);
+    }
+    
+    .list {
+        background: #fff;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: px2rem(20px);
+            box-sizing: border-box;
+            li {
+                width: 18%;
+                height: px2rem(73px);
+                border: 1px solid gray;
+                text-align: center;
+                line-height: px2rem(73px);
+                margin-bottom: px2rem(20px);
+                box-sizing: border-box;
+            }
+        }
+    }
+    
+    .jx {
+        width: 100vw;
+        background: #fff;
+        margin-top: px2rem(20px);
+        .title {
+            width: 100%;
+            height: px2rem(100px);
+            line-height: px2rem(100px);
+            display: flex;
+            padding: 0 px2rem(40px);
+            box-sizing: border-box;
+            justify-content: space-between;
+            p {
+                font-size: px2rem(34px);
+            }
+            p:nth-of-type(2) {
+                color: orange;
+                font-size: px2rem(30px);
+            }
+        }
+        ul {
+            display: flex;
+            padding: 0 px2rem(40px);
+            box-sizing: border-box;
+            justify-content: space-between;
+            background: #fff;
+            li {
+                width: 22%;
+                height: px2rem(260px);
+                img {
+                    width: 100%;
+                    height: px2rem(200px);
+                }
+                p {
+                    font-size: px2rem(30px);
+                    text-align: left;
+                }
+            }
+        }
+    }
+    
+    .footer {
+        width: 100vw;
+        height: 10vh;
+        border-top: 1px solid gainsboro;
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        z-index: 100;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            line-height: 10vh;
+            li {
+                width: 25%;
+                text-align: center;
+                font-size: px2rem(32px);
+            }
+            i {
+                display: inline-block;
+                width: px2rem(32px);
+                height: px2rem(32px);
+                background: url("../images/btn.gif");
+                background-size: cover;
+            }
+        }
+    }
+    
+    @mixin text-clamp($lines: 2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        display: -moz-box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: $lines;
+    }

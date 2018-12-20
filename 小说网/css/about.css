@@ -1,0 +1,44 @@
+html {
+  font-size: 30px;
+}
+
+.erro {
+  width: 100vw;
+  height: 10vh;
+  box-sizing: border-box;
+  padding: 1.6666666667rem;
+}
+.erro span {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url("../img/erro.png");
+  background-size: cover;
+}
+
+.about {
+  width: 100vw;
+  height: 16vh;
+  line-height: 10vh;
+  padding: 1.6666666667rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.about h1 {
+  font-size: 1.6666666667rem;
+  font-weight: 500;
+}
+.about img {
+  width: 7.5rem;
+  height: 7.0833333333rem;
+}
+
+.list {
+  padding: 1.6666666667rem;
+}
+.list li {
+  font-size: 1.3333333333rem;
+  height: 3.3333333333rem;
+  color: #666;
+}

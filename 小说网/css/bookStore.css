@@ -1,0 +1,130 @@
+html {
+  font-size: 30px;
+  background: #F2F2F2;
+}
+
+.header {
+  width: 100vw;
+  height: 1.6666666667rem;
+  line-height: 1.6666666667rem;
+  padding: 0 0.6666666667rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.1666666667rem;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+}
+.header i {
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  background: url("../images/sousuo.gif");
+  background-size: cover;
+  margin-top: 0.4166666667rem;
+}
+.header h2 {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.box {
+  overflow: auto;
+}
+
+.bg {
+  width: 100vw;
+  height: 25vh;
+  background: url("../img/bg.png");
+  background-size: 100% 100%;
+  margin-top: 1.6666666667rem;
+}
+
+.list {
+  background: #fff;
+}
+.list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.3333333333rem;
+  box-sizing: border-box;
+}
+.list ul li {
+  width: 18%;
+  height: 1.2166666667rem;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 1.2166666667rem;
+  margin-bottom: 0.3333333333rem;
+  box-sizing: border-box;
+}
+
+.jx {
+  width: 100vw;
+  background: #fff;
+  margin-top: 0.3333333333rem;
+}
+.jx .title {
+  width: 100%;
+  height: 1.6666666667rem;
+  line-height: 1.6666666667rem;
+  display: flex;
+  padding: 0 0.6666666667rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.jx .title p {
+  font-size: 0.5666666667rem;
+}
+.jx .title p:nth-of-type(2) {
+  color: orange;
+  font-size: 0.5rem;
+}
+.jx ul {
+  display: flex;
+  padding: 0 0.6666666667rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background: #fff;
+}
+.jx ul li {
+  width: 22%;
+  height: 4.3333333333rem;
+}
+.jx ul li img {
+  width: 100%;
+  height: 3.3333333333rem;
+}
+.jx ul li p {
+  font-size: 0.5rem;
+  text-align: left;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  border-top: 1px solid gainsboro;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  z-index: 100;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 10vh;
+}
+.footer ul li {
+  width: 25%;
+  text-align: center;
+  font-size: 0.5333333333rem;
+}
+.footer ul i {
+  display: inline-block;
+  width: 0.5333333333rem;
+  height: 0.5333333333rem;
+  background: url("../images/btn.gif");
+  background-size: cover;
+}

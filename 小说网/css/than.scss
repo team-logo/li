@@ -1,0 +1,118 @@
+    html {
+        font-size: 30px;
+    }
+    
+    @function px2rem($px) {
+        $rem: 60px;
+        @return($px/$rem)+rem;
+    }
+    
+    .header {
+        width: 100vw;
+        height: px2rem(100px);
+        line-height: px2rem(100px);
+        padding: 0 px2rem(40px);
+        box-sizing: border-box;
+        margin-bottom: px2rem(10px);
+        position: fixed;
+        top: 0;
+        background: #fff;
+        z-index: 100;
+        ul {
+            display: flex;
+            li {
+                width: 25%;
+                text-align: center;
+                color: #999;
+                font-size: px2rem(34px);
+            }
+        }
+    }
+    
+    .product {
+        margin-top: px2rem(100px);
+        .list {
+            padding: 0 px2rem(40px);
+            overflow: auto;
+            li {
+                width: 100%;
+                height: px2rem(215px);
+                display: flex;
+                padding: px2rem(20px);
+                box-sizing: border-box;
+                margin-bottom: px2rem(30px);
+                border-radius: px2rem(5px);
+                img {
+                    width: px2rem(129px);
+                    height: px2rem(185px);
+                    margin-right: px2rem(20px);
+                }
+                div:nth-of-type(2) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    p:nth-of-type(1) {
+                        font-size: px2rem(30px);
+                        color: #333;
+                    }
+                    p:nth-of-type(2) {
+                        font-size: px2rem(26px);
+                        color: #666;
+                    }
+                    p:nth-of-type(3) {
+                        color: #999;
+                        a {
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer {
+        width: 100vw;
+        height: 10vh;
+        border-top: 1px solid gainsboro;
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        z-index: 100;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            line-height: 10vh;
+            li {
+                width: 25%;
+                text-align: center;
+                font-size: px2rem(32px);
+            }
+            i {
+                display: inline-block;
+                width: px2rem(32px);
+                height: px2rem(32px);
+                background: url("../images/btn.gif");
+                background-size: cover;
+            }
+        }
+    }
+    
+    @mixin text-clamp($lines: 2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        display: -moz-box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: $lines;
+    }
+    
+    .w {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        display: -moz-box;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }

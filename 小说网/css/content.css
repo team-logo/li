@@ -1,0 +1,27 @@
+html {
+  font-size: 30px;
+  background: #f7f7ff;
+}
+
+.header {
+  width: 100vw;
+  height: 1.6666666667rem;
+  line-height: 1.6666666667rem;
+  padding: 0 0.6666666667rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.header p {
+  font-size: 0.5rem;
+}
+
+.content {
+  width: 100vw;
+  padding: 0 0.6666666667rem;
+  box-sizing: border-box;
+  font-size: 0.5333333333rem;
+  text-indent: 2em;
+  line-height: 1.3333333333rem;
+  overflow: auto;
+}
